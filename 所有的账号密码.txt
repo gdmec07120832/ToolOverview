@@ -1,0 +1,220 @@
+svn://svn.linshimuye.com:3391/BI/数据平台部
+账号 tancq  密码 rqX4817y
+
+=====================数据库账号=========================
+
+---==========数据库oracle===============================
+数据仓库正式：10.10.1.173 1521 数据库实例SID：LSMYDW 
+账号：USER09787
+密码：HS9hkCOmt3n
+
+
+数据仓库测试:10.10.14.228 1521 数据库实例SID：LSMYDWTEST
+账号：dm_bi
+密码：DM_BI
+
+=====================数据库账号=========================
+
+
+
+
+
+
+
+
+
+
+
+核心工作范围
+1.永洪工具管理:系统可用性、权限管理、报表审核、报表优化
+2.永洪报表开发和技术指导
+3.DataV大屏工具开发(按需)
+4.Web前端开发：BI无线端、永洪报表转jsp实现
+
+
+--==============SVN============================
+svn://svn.linshimuye.com:3391/BI/数据平台部 
+
+申请中
+
+
+
+BI辅助平台（运维功能为主的系统）
+http://biman.linshimuye.com:8005/
+09787
+Lsbi_2000
+
+
+永洪线上服务平台(先注册账号，后面可以提工单咨询永洪售后人员）
+http://online.yonghongtech.com/index.php/Home/Index/index
+服务识别码：5p6X5rCP5pyo5Lia5pm66IO95YiG5p6Q5bmz5Y+w6aG555uuODk3Mjg2
+服务识别码密码：gmcc1234
+
+
+--==============大屏工具======================
+Data V (已发布的报表不要编辑）
+https://signin.aliyun.com/1461650476285662.onaliyun.com/login.htm?callback=http%3A%2F%2Fdatav.aliyun.com
+账号：ninghao@1461650476285662.onaliyun.com   密码：lsmy@2019
+
+
+新的地址
+新的连接如下：
+DATAV:https://signin.aliyun.com/1460787438751845.onaliyun.com/login.htm  
+ 账号：ninghao@1460787438751845.onaliyun.com   
+ 密码：lsmy@2019
+ 
+新的地址
+Pg数据库
+ 新地址 ： pgm-wz9b8uvz96k4k1aieo.pg.rds.aliyuncs.com  端口 1921 
+ 用户名： biadmin  
+ 密码： $Dw5FJ2DcfsJo0kF   
+
+--=============测试环境=========================
+永洪
+http://10.10.14.218:8085/bi/
+09787
+Lsbi_2000
+
+调度系统 
+http://test.bits.linshimuye.com:8090/index#
+09787
+Lsbi_2000
+新的：Lsbi_2000.
+
+部署平台
+http://test.biad.linshimuye.com:8098/index.html
+09787
+Lsbi_2000
+
+数据填报系统
+http://10.10.14.121:8090/mis/login.html
+09787
+Lsbi_2000
+
+
+BI门户 
+http://test.bi.linshimuye.com:9090/index
+OA的账号密码
+
+
+
+
+--===========生产环境=========================
+
+永洪NC节点（供用户访问报表的节点）报表
+http://10.10.1.170:9090/bi/?proc=0&action=index
+
+永洪备C节点（管理维护主要在这个节点上操作） 跑数
+http://10.10.1.174:8180/bi/?proc=0&action=index   账号: 09787  密码：Lsbi_2000
+
+永洪MR节点1（计算节点，无需管理和操作）
+http://10.10.1.171:8080/bi/?proc=0&action=index   账号: admin  密码：g5
+
+永洪MR节点2（计算节点，无需管理和操作）
+http://10.10.1.172:8080/bi/?proc=0&action=index   账号: admin  密码：g5
+
+
+
+调度系统 
+http://bits.linshimuye.com:8095/index
+09787
+Lsbi_2000
+
+
+部署平台
+http://10.10.1.236:8098/index.html
+09787
+Lsbi_2000
+
+数据填报系统
+http://tianbao.bi.linshimuye.com:8091/mis/login.html
+09787
+Lsbi_2000
+
+BI门户 
+http://bi.linshimuye.com:9090/index
+OA的账号密码
+
+
+
+
+
+
+
+
+
+向日葵
+识别码：937535797
+验证码：gmcc
+
+
+
+
+管理员创建了你的账号。现在你已是 GitLab 应用的成员。
+http://gitlab.code.linshimuye.com:9078/users/sign_in
+
+账号：tanchaoqiang@linshimuye.com
+密码：13427336623a
+
+
+
+
+
+
+移动端的生产：
+移动BI  "服务器地址:10.10.14.123  
+账号:root 
+密码:lsmybi.123
+源代码存放路径:/data/code/lsmy-bi-mobile-front
+管理后台部署脚本:/data/script/dashboard.sh
+移动端部署脚本:/data/script/mobile-front.sh
+打包后代码存放位置:/data/lsmy-bi-mobile-backend/front"  
+
+记录移动端bi的操作日志表  BI_MB_OPERA_LOG
+PG库的 永洪的权限表查询  bi_ad_task_detail  
+
+cd /data/script
+pwd
+bash mobile-front.sh
+//推送报表接口命名规则：  NON_PM开头
+
+// 电脑PC端的web化
+ls 查看列表
+cd /data/script
+bash lighthouse-front-test.sh
+
+// 数据传送测试打包脚本
+bash bi-datamessage-front.sh
+
+
+
+
+wq!  保存
+shift + q 退出
+q!  退出到这里
+vi 对应的文件名  查看代码
+
+
+vpn 密码： 你的VPN密码已改tcq_Aur11 
+
+永洪：09787    Linshibi_2000A
+
+
+测试
+root
+A!9OjP9gwJdL9ugA
+yonghong85
+
+
+永洪 生产备份的账号
+BI_YH_0927
+vpg*ARGRH6E2
+
+永洪 9.0生产 账号
+admin
+unF3$4vB33h1
+
+电脑密码
+13427336623lL
+
+

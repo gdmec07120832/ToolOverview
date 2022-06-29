@@ -1,0 +1,3 @@
+,to_number(substr(to_char(month_num),0,6)) as month_num_new  --月份yyyymm   转数字
+
+,nvl(sum(SEND_AMT) OVER(PARTITION BY TRUNC(TDATE,'MM'),LINEARE_NAME),0) AS M_SEND_AMT  --开窗函数sum起来不需要 分组的

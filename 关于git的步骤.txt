@@ -1,0 +1,51 @@
+1，获取你要下载文件的网址 :
+$ git clone http://gitlab.code.linshimuye.com:9078/BISJ/lsmy-bi-mobile-front.git
+2，输入登陆的账号密码
+3，1s  查看文件夹里面的有什么东西
+4，git status 是检查那些代码做出了处理
+5，git add mobile/src/*/**  把文件添加到缓存区域
+6，git config --global user.name ""  git config --global user.email ""  设置你的用户名和名称
+7，git commit主要是将暂存区里的bai改动给提交到本地的版本库。  也可以用git commit -m ‘你要写的东西’
+8，git push是将本地库中的最新信息发送给远程库。
+
+9，git checkout tcq_test（这个是你的分支名称）  本地切换到git的远程分支哪里
+     git checkout -b xxxxxx (创建并切换到新分支)
+10，git branch -a  （查看本地现在是指向那个分支哪里）
+11，git pull 同步代码
+
+12、git config --global --list  查看自己git 里面的user_name
+13、git config --global user.name "tanchaoqiang"  改自己的user_name
+
+14、git revert HEAD  //变相回退  将git push 退回去
+15、git checkout src/views/data-report-ding/NewRetailReport.vue  //回复某个文件
+
+git status 先看一下add 中的文件
+git reset HEAD 如果后面什么都不跟的话 就是上一次add 里面的全部撤销了
+git reset HEAD XXX/XXX/XXX.c 就是对某个文件进行撤销了
+
+git reset --hard   （放弃本地修改，直接覆盖之）
+
+git cherry-pick 62ecb3（合并指定的某个提交）
+
+git revert 933e5f96736cb8132bdedddb5a122d2e1fe8ba69  （删除某个提交回复之前的状态）
+
+
+git diff master origin/master (检测本地未提交的代码和原来的区别)
+git merge feat-20220112-tcq （先切换到master分支上然后再同步本地分支代码到master上）
+npm install --save echarts-liquidfill@2.0.6（npm 安装指定版本的格式）
+
+git merge --abort  (撤销这次的merge 前提是未提交状态)
+假如不幸已经 git add 了怎么办呢？ 其实也很简单，先用 git reflog 指令显示历史的操作
+再用 'git reset --hard commit id’就可以回退到操作之前的状态了
+
+git 关于上传项目到个人GitHub的步骤
+git clone http://gitlab.code.linshimuye.com:9078/BISJ/lsmy-bi-mobile-front.git
+git remote set-url origin https://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@github.com/gdmec07120832/ReactProject.git(这是需要在GitHub那里设置令牌的)
+git push -u origin master 把项目推上去
+git config --global http.sslVerify "false"  解除SSL认证
+git config --list   查看git的配置
+
+
+
+9，去到缓存界面的时候
+w:保存  q:推出   i是可以写文字 

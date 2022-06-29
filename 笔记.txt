@@ -1,0 +1,89 @@
+
+新项目下来
+首先要 项目初始化  yarn init
+接着要安装所有依赖  yarn install
+
+Uncaught (in promise) TypeError  中的in promise  是异步报错不能用vue的来捕获的
+
+通常把下载的插件不要放再开发依赖哪里 那样会容易冲突的！
+假如放了 必须要放到正式哪里然后再从新按照一遍才行
+vue的插件文件
+package.json
+"dependencies":{
+正式环境下的依赖
+}
+"devDependencies":{
+开发环境的依赖
+}
+假如修正后就运行 npm install
+然后重新运行一遍
+
+
+
+登陆账号 ：
+账号： 09787
+密码： 09787
+
+npm run serve  来启动
+
+const  是定义一个常量 这个常量不被改变
+let  是块作用域
+
+
+关于 vuex的笔记
+mapState通过扩展运算符将store.state.orderList 映射this.orderList  这个this 很重要，这个映射直接映射到当前Vue的this对象上。
+所以通过this都能将这些对象点出来，同理，mapActions, mapMutations都是一样的道理。牢记~~~
+
+
+vue报错：'**' is defined but never used no-unused-vars这样一次性解决
+导致这个报错的原因就是eslint校验，如果你搭建vue项目的时候选择了eslint校验，后面你绝对会碰到这样的报错，毋庸置疑。
+而这个报错信息也很简单，就是你定义了某个变量，但是你没有使用它。eslint规范就是你要么不定义，要么定义了就一定得用，就像那个啥，你必须得负责任。
+
+
+
+
+
+判断是否到底部的开始
+    window.onscroll = function(){
+      //变量scrollTop是滚动条滚动时，距离顶部的距离
+      var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
+      //变量windowHeight是可视区的高度
+      // var windowHeight = document.documentElement.clientHeight || document.body.clientHeight;
+      //变量scrollHeight是滚动条的总高度
+      // var scrollHeight = document.documentElement.scrollHeight||document.body.scrollHeight;
+        //滚动条到底部的条件
+        // if(scrollTop+windowHeight == scrollHeight){
+        // //到了这个就可以进行业务逻辑加载后台数据了
+        //   // _this.footerText = '我是有底线的';
+        //   console.log("到了底部");
+        //   alert("asdasd")
+        // } 
+        if(scrollTop>85){
+          _this.nav_theme.show=true;
+          
+        }else{
+          _this.nav_theme.show=false;
+        }
+
+      }
+判断是否到底部的结束
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
